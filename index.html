@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wan hu 67 · Tecnológico de Monterrey, Sinaloa 2026</title>
+<meta name="description" content="Equipo Wan hu 67: diseño, simulación y pruebas de un paracaídas para un cohete de papel.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="cielo" aria-hidden="true"></canvas>
+
+<main class="portada">
+  <img class="tec" src="img/tec-logo.png" alt="Tecnológico de Monterrey">
+  <img class="emblema" src="img/logo.png" alt="Emblema de Wan hu 67: cohete, luna y dragón">
+  <h1>Wan hu 67</h1>
+  <p class="lema">Un paracaídas para un cohete de papel, inspirado en la leyenda de Wan Hu, el hombre que soñó con volar con cohetes.</p>
+  <p class="campus">Campus Sinaloa · 2026</p>
+</main>
+
+<nav class="menu" aria-label="Secciones">
+  <button data-abrir="proyecto">Proyecto</button>
+  <button data-abrir="videos">Videos</button>
+  <button data-abrir="evidencia">Evidencia</button>
+  <button data-abrir="blog">Blog</button>
+  <button data-abrir="equipo">Equipo</button>
+</nav>
+
+<div id="velo" class="velo" hidden>
+  <section id="ventana" class="ventana" role="dialog" aria-modal="true" aria-labelledby="titulo-ventana" tabindex="-1">
+    <button class="cerrar" aria-label="Cerrar">✕</button>
+    <h2 id="titulo-ventana"></h2>
+    <div id="contenido"></div>
+  </section>
+</div>
+
+<div id="lupa" class="lupa" hidden><img alt=""><p></p></div>
+
+<script src="blog.js"></script>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
